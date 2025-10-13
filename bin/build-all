@@ -1,0 +1,10 @@
+#! /usr/bin/env bash
+#
+# logstash/bin/build-all
+#
+# raymondstrose@hotmail.com
+#
+#   Build a Logstash base image.
+#
+
+for name in 8.17.10 8.18.8 8.19.5 9.0.8 9.1.5; do bin/build --base-image-tag=$name; done;
