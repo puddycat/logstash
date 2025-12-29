@@ -1,6 +1,6 @@
 #! /usr/bin/env bash
 #
-# logstash/bin/helm-install
+# logstash/containers/bin/helm-install
 #
 # raymondstrose@hotmail.com
 #

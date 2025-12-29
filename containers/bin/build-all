@@ -1,6 +1,6 @@
 #! /usr/bin/env bash
 #
-# logstash/bin/build-all
+# logstash/containers/bin/build-all
 #
 # raymondstrose@hotmail.com
 #

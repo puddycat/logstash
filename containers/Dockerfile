@@ -1,5 +1,5 @@
 #
-# logstash/Dockerfile
+# logstash/containers/Dockerfile
 #
 # raymondstrose@hotmail.com
 #
