@@ -182,17 +182,26 @@ spec:
             - name: empty-dir
               mountPath: /tmp
               subPath: tmp-dir
+{{- /*
             - name: empty-dir
               mountPath: /usr/share/logstash/config
               subPath: app-conf-dir
+*/}}
+{{- /*
             - name: empty-dir
               mountPath: /usr/share/logstash/pipeline
               subPath: app-pipeline-dir
+*/}}
+{{- /*
+            - name: empty-dir
+              mountPath: /usr/share/logstash/data
+              subPath: data-dir
+*/}}
             - name: data
               mountPath: {{ .Values.persistence.mountPath }}
             {{- if or .Values.input .Values.filter .Values.output .Values.existingConfiguration }}
             - name: configurations
-              mountPath: /usr/share/logstash/config
+              mountPath: /logstash/config
             {{- end }}
             {{- if .Values.extraVolumeMounts }}
             {{- include "common.tplvalues.render" ( dict "value" .Values.extraVolumeMounts "context" $ ) | nindent 12 }}

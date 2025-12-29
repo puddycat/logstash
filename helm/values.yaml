@@ -622,7 +622,8 @@ persistence:
   annotations: {}
   ## @param persistence.mountPath Mount path of the Logstash data volume
   ##
-  mountPath: /logstash/data
+  #mountPath: /logstash/data
+  mountPath: /usr/share/logstash/data
   ## @param persistence.selector Selector to match an existing Persistent Volume for Logstash data PVC
   ## If set, the PVC can't have a PV dynamically provisioned for it
   ## E.g.
